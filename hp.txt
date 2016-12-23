@@ -1,1 +1,16 @@
-gsdkjnsfhsildfhsfjs
+
+Program:
+#include<iostream.h>
+#include<conio.h>
+int a =5;
+void main()
+{
+   int a =10;
+   clrscr();
+   cout<<”\n value of a in main = “<<a <<endl;
+   {
+      int a =20;
+      cout <<”\n value of a in block = “<<a ;
+      getch();
+   }
+}
