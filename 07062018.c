@@ -1,19 +1,21 @@
 /* Question from "Let Us C by Yashavant P. Kanetkar" text book:
 An Insurance company follows following rules to calculate premium.
-(1) If a person’s health is excellent and the person is between 25 and 35 years of age and lives in a city and is a male then the premium is Rs. 4 per thousand and his policy amount cannot exceed Rs. 2 lakhs.
+(1) If a personâ€™s health is excellent and the person is between 25 and 35 years of age and lives in a city and is a male then the premium is Rs. 4 per thousand and his policy amount cannot exceed Rs. 2 lakhs.
 (2) If a person satisfies all the above conditions except that the sex is female then the premium is Rs. 3 per thousand and her policy amount cannot exceed Rs. 1 lakh.
-(3) If a person’s health is poor and the person is between 25 and 35 years of age and lives in a village and is a male then the premium is Rs. 6 per thousand and his policy cannot exceed Rs. 10,000.
+(3) If a personâ€™s health is poor and the person is between 25 and 35 years of age and lives in a village and is a male then the premium is Rs. 6 per thousand and his policy cannot exceed Rs. 10,000.
 (4) In all other cases the person is not insured.
 Write a program to output whether the person should be insured or not, his/her premium rate and maximum amount for which he/she can be insured.
+
+solution by :Bh.D.Darbar on 07-06-2018
 */
 
 #include<stdio.h>
 int main()
 {
-char per_hel;
-char liv_are;
-char sex;
-int age,pre,pol_amnt;
+char per_hel; //per_hel=person health
+char liv_are; //liv_area=living area (city or village)
+char sex; //for gender identity
+int age,pre,pol_amnt; //pre=premium and pol_amnt=policy amount
 printf("health (E-Excellent or P-poor) :");
 scanf("%c",&per_hel);
 printf("\nliving in (C-city or V-village):");
@@ -36,8 +38,7 @@ if((per_hel=='E'||per_hel=='e')&&age>=25&&age<=35&&(liv_are=='C'||liv_are=='c'))
 	else if((sex=='m'||sex=='M')&&pol_amnt>=200000)
 	{
 		printf("\n person is not insured");
-		printf("\nHis premium rate is RS 4.00 per thousand.");
-		printf("\nThe maximun amount for which he insured is (2,00,000) 2 lakhs only.");
+		printf("\nTry entering the maximun amount of (2,00,000) 2 lakhs only to get insured and to avail the premium rate of RS 4.00 per thousand.");
 	}
 	else if((sex=='f'||sex=='F')&&pol_amnt<=100000)
 	{
@@ -48,8 +49,7 @@ if((per_hel=='E'||per_hel=='e')&&age>=25&&age<=35&&(liv_are=='C'||liv_are=='c'))
 	else
 	{
 		printf("\n person is not insured");
-		printf("\nHer premium rate is RS 3.00 per thousand.");
-		printf("\nThe maximun amount for which she insured is (1,00,000) 1 lakh only.");
+		printf("\nTry entering the maximun amount of (1,00,000) 1 lakh only to get insured and to avail the premium rate of RS 3.00 per thousand.");
 	}
 }
 else if((per_hel=='p'||per_hel=='P')&&age>=25&&age<=35&&(liv_are=='v'||liv_are=='V')&&(sex=='m'||sex=='M'))
@@ -63,8 +63,7 @@ else if((per_hel=='p'||per_hel=='P')&&age>=25&&age<=35&&(liv_are=='v'||liv_are==
 	else if(pol_amnt>=1000)
 	{
 		printf("\n person is not insured");
-		printf("His premium rate is RS 6.00 per thousand.");
-		printf("\nThe maximun amount for which he insured is (10,000) ten thousand only.");
+		printf("\nTry entering the maximun amount of (10,000) ten thousand only to get insured and to avail the premium rate of RS 6.00 per thousand.");
 	} 
 }
 else
