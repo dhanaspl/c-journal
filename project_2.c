@@ -1,6 +1,6 @@
 /* Writing a C program using printf statement to print the word KIET in big blocks.
 This program does not read anything from the keyboard.
-Each letter is formed using seven rows and five coloumns using the letter itself.
+Each letter is formed using the letter itself.
 
 Written by : Bhetanabhotla Dhanadeswara Darbar,
 Date : 27-JUNE-2018
