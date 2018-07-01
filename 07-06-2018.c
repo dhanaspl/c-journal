@@ -6,7 +6,8 @@ An Insurance company follows following rules to calculate premium.
 (4) In all other cases the person is not insured.
 Write a program to output whether the person should be insured or not, his/her premium rate and maximum amount for which he/she can be insured.
 
-solution by :Bh.D.Darbar on 07-06-2018
+Written by :Bh.D.Darbar
+Date : 07-06-2018
 */
 
 #include<stdio.h>
